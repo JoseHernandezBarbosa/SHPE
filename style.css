@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+header{
+    background-color: #2C2C2C;
+}
+
+.navBar{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBarList{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.navBarItem{
+    padding: 1rem 0;
+    min-width: 15rem;
+    text-align: center;
+}
+
+.navBarLink{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    height: 2px;
+    width: 15rem;
+    background-color: white;
+    position: absolute;
+    bottom: -1rem;
+    transition: transform .6s;
+}
+
+.navBarItem:nth-child(1):hover ~ .active{
+    transform: translateX(0);
+    color: #39AA7F;
+}
+
+.navBarItem:nth-child(2):hover ~ .active{
+    transform: translateX(15rem);
+    color: #39AA7F;
+}
+
+.navBarItem:nth-child(3):hover ~ .active{
+    transform: translateX(30rem);
+    color: #39AA7F;
+}
+
+.navBarItem:nth-child(4):hover ~ .active{
+    transform: translateX(45rem);
+    color: #39AA7F;
+}
+
+/* Start of SlideShow Style */
+.slideshow{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    animation: cycleImages 41s infinite;
+    opacity: 0;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 41s infinite;
+}
+
+.slide:nth-child(1),
+.slide:nth-child(1) img{
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(2) img{
+    animation-delay: 10s;
+}
+
+.slide:nth-child(3),
+.slide:nth-child(3) img{
+    animation-delay: 20s;
+}
+
+.slide:nth-child(4),
+.slide:nth-child(4) img{
+    animation-delay: 30s;
+}
+
+.slideText{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 75%;
+    color: white;
+    padding: 5rem 3rem;
+    font-family: "Monserrat", sans-serif;
+    text-align: center;
+}
+
+
+.mainText{
+    font-size: 5rem;
+    font-family: "Monserrat", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 150;
+}
+
+.subText{
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-family: "Monserrat", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+@keyframes cycleImages{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom{
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+/* Logos on the front page */
+
+h5 {
+    font-family: 'Abel', sans-serif;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.introLogos{
+    display: flex;
+    flex: 33.33%;
+}
+
+/* For the Paragraphs of Home Page */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');.homeIntro{
+    padding: 8px;
+    text-align: center;
+    color: #2C2C2C;
+    font-size: 20px;
+    opacity: 80%;
+    font-family: 'Abel', sans-serif;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+}
+
+.mission{
+    width: 100%;
+    position: absolute;
+    background-color: #2C2C2C;
+    text-align: center;
+    opacity: 90%;
+}
+
+.mission h5{
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mission p{
+    font-size: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
+}
+
+
