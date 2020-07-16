@@ -169,12 +169,40 @@ h5 {
     font-family: 'Abel', sans-serif;
     font-size: 4rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-.introLogos{
-    display: flex;
-    flex: 33.33%;
+.introLogos img{
+    width: 100%;
+}
+
+.introLogos figcaption{
+    font-family: 'Abel', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: rgb(0, 185, 114);
+    font-weight: 200;
+}
+
+.mentorship figcaption{
+    margin-top: 3rem;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table
+}
+
+.introLogos p {
+    margin-top: 7rem;
+    font-size: 2.15rem;
 }
 
 /* For the Paragraphs of Home Page */
