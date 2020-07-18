@@ -167,7 +167,7 @@ nav{
 
 h5 {
     font-family: 'Abel', sans-serif;
-    font-size: 4rem;
+    font-size: 6rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
@@ -222,14 +222,15 @@ h5 {
 .mission{
     width: 100%;
     position: absolute;
-    background-color: #2C2C2C;
+    background-color: #e0e0e0;
+    color: #2C2C2C;
     text-align: center;
     opacity: 90%;
 }
 
 .mission h5{
-    font-size: 4rem;
-    margin-top: 3rem;
+    font-size: 6rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;
 }
 
@@ -237,7 +238,45 @@ h5 {
     font-size: 3rem;
     margin-left: 4rem;
     margin-right: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 
+.joinSection img{
+    width: 100%;
+}
 
+.joinText{
+    width: 100%;
+    position: relative;
+    margin-top: -40%;
+}
+
+.joinText{
+    text-align: inherit;
+}
+
+.joinText p{
+    font-size: 3rem;
+    margin-top: 12rem;
+    margin-bottom: 0;
+}
+
+.joinSection button{
+    background-image: linear-gradient(to bottom right,mediumspringgreen, rgb(0, 255, 242));
+    padding: 9px 25px;
+    border:None;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    margin-top: 0;
+}
+
+.joinSection button:hover{
+    background-image: linear-gradient(to bottom right,rgb(0, 199, 118), rgb(0, 199, 242));
+}
+
+.joinSection a{
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;    
+    font-size: 3rem;
+    color: #2C2C2C;
+}
