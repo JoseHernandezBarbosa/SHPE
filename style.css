@@ -206,7 +206,9 @@ h5 {
 }
 
 /* For the Paragraphs of Home Page */
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');.homeIntro{
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.homeIntro{
     padding: 8px;
     text-align: center;
     color: #2C2C2C;
@@ -221,28 +223,30 @@ h5 {
 
 .mission{
     width: 100%;
-    position: absolute;
-    background-color: #e0e0e0;
+    position: relative;
+    background-image: linear-gradient(to bottom right,rgb(255, 174, 0), rgb(255, 251, 1));
     color: #2C2C2C;
     text-align: center;
     opacity: 90%;
+    padding: 10rem 0;
 }
 
 .mission h5{
     font-size: 6rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 8rem;
 }
 
 .mission p{
     font-size: 3rem;
     margin-left: 4rem;
     margin-right: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 .joinSection img{
     width: 100%;
+    position: relative;
 }
 
 .joinText{
@@ -252,7 +256,7 @@ h5 {
 }
 
 .joinText{
-    text-align: inherit;
+    text-align: center;
 }
 
 .joinText p{
@@ -267,7 +271,7 @@ h5 {
     border:None;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
-    margin-top: 0;
+    margin-top: 5rem;
 }
 
 .joinSection button:hover{
@@ -279,4 +283,152 @@ h5 {
     font-family: 'Abel', sans-serif;    
     font-size: 3rem;
     color: #2C2C2C;
+}
+
+
+.news{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url("background.jpg");
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+}
+
+.cardImg {
+    grid-area: image;
+    background: url(homePhotos/community.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.cardText {
+    grid-area: text;
+    margin: 25px;
+}
+
+.cardText .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+}
+
+.cardText p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+}
+
+.cardText h2 {
+    margin-top:0px;
+    font-size:28px;
+}
+
+.cardStats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(0, 250, 154);
+}
+
+.cardStats .stat {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.cardStats .border {
+    border-left: 1px solid rgb(0, 212, 131);
+    border-right: 1px solid rgb(0, 212, 131);
+}
+
+.cardStats .value{
+    font-size:22px;
+    font-weight: 500;
+}
+
+.cardStats .value sup{
+    font-size:12px;
+}
+
+.cardStats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card2*/
+.cardImg .card2 {
+    background: url("img2.jpg");
+    background-size: cover;
+}
+
+.cardText .card2 .date {
+    color: rgb(255, 77, 7);
+}
+
+.cardStats .card2 .border {
+    border-left: 1px solid rgb(185, 67, 20);
+    border-right: 1px solid rgb(185, 67, 20);
+}
+
+.cardStats .card2 {
+    background: rgb(255, 77, 7);
+}
+
+/*card3*/
+.cardImg .card3 {
+    background: url("img3.jpg");
+    background-size: cover;
+}
+
+.cardText .card3 .date {
+    color: rgb(0, 189, 63);
+}
+
+.cardStats .card3 .border {
+    border-left: 1px solid rgb(14, 122, 50);
+    border-right: 1px solid rgb(14, 122, 50);
+}
+
+.cardStats .card3 {
+    background: rgb(0, 189, 63);
+}
+
+.news h5{
+    font-size: 6rem;
+    color: #2C2C2C;
+    margin-left: 30px;
+    margin-right: 10px;
+
 }
