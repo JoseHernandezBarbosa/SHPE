@@ -13,6 +13,8 @@ html{
 
 header{
     background-color: #2C2C2C;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 .navBar{
@@ -285,8 +287,18 @@ h5 {
     color: #2C2C2C;
 }
 
+#newsHeader h5{
+    position: relative;
+    color: #2C2C2C;
+    text-align: center;
+    margin-top: 25rem;
+    font-size: 5rem;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 200;
+}
 
 .news{
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -305,7 +317,7 @@ h5 {
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
+    font-family: "Monserrat", sans-serif;
     text-align: center;
 
 
@@ -316,10 +328,10 @@ h5 {
 
 .cardImg {
     grid-area: image;
-    background: url(homePhotos/community.jpg);
+    /* background: url(homePhotos/community.jpg); */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .cardText {
@@ -328,7 +340,7 @@ h5 {
 }
 
 .cardText .date {
-    color: rgb(255, 7, 110);
+    /* color: rgb(255, 7, 110); */
     font-size:13px;
 }
 
@@ -350,8 +362,9 @@ h5 {
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: rgb(0, 250, 154);
+    /* background: rgb(0, 250, 154); */
 }
+
 
 .cardStats .stat {
     padding:10px;
@@ -360,11 +373,6 @@ h5 {
     justify-content: center;
     flex-direction: column;
     color: white;
-}
-
-.cardStats .border {
-    border-left: 1px solid rgb(0, 212, 131);
-    border-right: 1px solid rgb(0, 212, 131);
 }
 
 .cardStats .value{
@@ -387,42 +395,62 @@ h5 {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
-/*card2*/
-.cardImg .card2 {
-    background: url("img2.jpg");
+/* card1 */
+
+.card1Img{
+    background: url(homePhotos/SHPEgroup.jpg);
     background-size: cover;
 }
 
-.cardText .card2 .date {
-    color: rgb(255, 77, 7);
+.card1 .date{
+    color: rgb(0, 221, 136);
 }
 
-.cardStats .card2 .border {
-    border-left: 1px solid rgb(185, 67, 20);
-    border-right: 1px solid rgb(185, 67, 20);
+.card1Stats .border {
+    border-left: 1px solid rgb(0, 212, 131);
+    border-right: 1px solid rgb(0, 212, 131);
 }
 
-.cardStats .card2 {
-    background: rgb(255, 77, 7);
+.card1Stats{
+    background: rgb(0, 221, 136);
+}
+
+/* card2 */
+.card2Img {
+    background: url(homePhotos/news1.jpg);
+    background-size: cover;
+}
+
+.card2 .date {
+    color: rgb(255, 168, 86);
+}
+
+.card2Stats .border {
+    border-left: 1px solid rgb(253, 159, 71);
+    border-right: 1px solid rgb(253, 159, 71);
+}
+
+.card2Stats {
+    background: rgb(255, 168, 86);
 }
 
 /*card3*/
-.cardImg .card3 {
-    background: url("img3.jpg");
+.card3Img {
+    background: url(homePhotos/news2.jpg);
     background-size: cover;
 }
 
-.cardText .card3 .date {
-    color: rgb(0, 189, 63);
+.card3 .date {
+    color: rgb(0, 221, 136);
 }
 
-.cardStats .card3 .border {
-    border-left: 1px solid rgb(14, 122, 50);
-    border-right: 1px solid rgb(14, 122, 50);
+.card3Stats .border {
+    border-left: 1px solid rgb(0, 212, 131);
+    border-right: 1px solid rgb(0, 212, 131)
 }
 
-.cardStats .card3 {
-    background: rgb(0, 189, 63);
+.card3Stats {
+    background: rgb(0, 221, 136);
 }
 
 .news h5{
@@ -431,4 +459,62 @@ h5 {
     margin-left: 30px;
     margin-right: 10px;
 
+}
+
+body a{
+    color: #2c2c2c;
+}
+
+footer a{
+    color: White;
+}
+
+footer h5{
+    color: white;
+    font-size: 2rem;
+    font-weight: 50;
+}
+
+.main_footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2C2C2C;
+}
+.upper_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_socials {
+    justify-content: space-around;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    margin: 4px 2px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+    color: rgb(0, 221, 136);
+}
+.footer_copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    padding: 13px;
 }

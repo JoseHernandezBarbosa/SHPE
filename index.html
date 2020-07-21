@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" type="Text/CSS" href="style.css">
 </head>
 <body>
@@ -84,7 +86,7 @@
     </div>
     
     <!-- What is SHPE intro Sentances -->
-    <section>
+    <section data-aos="fade-down">
         <div class="homeIntro">
             <h5>
                 What is SHPE?
@@ -92,17 +94,17 @@
             <br>
             <div class="introLogos">
                 <div class="row">
-                    <div class="column">
+                    <div class="column" data-aos="flip-left">
                         <div class="mentorship">
                             <img src="homePhotos/mentorship.jpg" alt="Mentorship Photo">
                             <figcaption>MentorSHPE</figcaption>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column" data-aos="flip-down">
                         <img src="homePhotos/profDev.jpg" alt="Professional Developemnt Photo">
                         <figcaption>Professional Development</figcaption>
                     </div>
-                    <div class="column">
+                    <div class="column" data-aos="flip-right">
                         <img src="homePhotos/community.jpg" alt="Community Photo">
                         <figcaption>Familia</figcaption>
                     </div>
@@ -116,7 +118,7 @@
         </div>
     </section>
     
-    <section>
+    <section data-aos="fade-up">
         <div class="mission">
             <h5>Our Mission</h5>
             <p>To Create a community that provides support, advice, and guidance through each stage of the Dartmouth career.
@@ -125,7 +127,7 @@
         </div>
     </section>
 
-    <section>
+    <section data-aos="fade-up">
         <div class="joinSection">
             <img src="homePhotos/greenBackground.jpg" alt="green background">
             <div class="joinText">
@@ -141,18 +143,24 @@
         </div>
     </section>
 
-    <section id="n">
-        <h5>Look at our awesome members!</h5>
-        <div class="news">
-            <h5>Look at our awesome members!</h5>
+    <div id="newsHeader" data-aos="fade-left">
+        <h5>Check out these articles about SHPE and our members!</h5>
+    </div>
+
+    <section id="n" data-aos="fade-right">
+        <div class="news">         
             <div class="card">
-                <div class="cardImg"></div>
-                <div class="cardText">
+                <div class="cardImg card1Img"></div>
+                <div class="cardText card1">
                     <span class="date">4 days ago</span>
-                    <h2>Post One</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                    <h2>SHPE Attends First Conference</h2>
+                    <p>SHPE represented Thayer for the first time in Cleveland Ohio at the 2018 National Conference.
+                        <a href="https://engineering.dartmouth.edu/magazine/new-student-group-society-of-professional-hispanic-engineers">
+                            <br>[Read More]
+                        </a>
+                    </p>
                 </div>
-                <div class="cardStats">
+                <div class="cardStats card1Stats">
                     <div class="stat">
                         <div class="value">
                             4<sup>m</sup>
@@ -181,75 +189,99 @@
             </div>
     
             <div class="card">
-                <div class="cardImg card2"></div>
+                <div class="cardImg card2Img"></div>
                 <div class="cardText card2">
-                    <span class="date">1 week ago</span>
-                    <h2>Post Two</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                    <span class="date">1 month ago</span>
+                    <h2>SHPE Member Tackles COVID-19</h2>
+                    <p>Joshua De La Cruz, SHPE Co-President, and his ENGS 21 team engineered a more easy and effective way 
+                        of washing hands
+                        <a href="https://engineering.dartmouth.edu/news/undergraduate-projects-address-covid-19-problems">[Read More]</a>
+                    </p>
                 </div>
-                <div class="cardStats card2">
+                <div class="cardStats card2Stats">
                     <div class="stat">
                         <div class="value">
-                            7<sup>m</sup>
+                            2022
                         </div>
                         <div class="type">
-                            read
+                            Graduation Year
                         </div>
                     </div>
                     <div class="stat border">
                         <div class="value">
-                            2134
+                            SHPE
                         </div>
-                        <div class="type">
-                            views
-                        </div>
+                        <div class="type"></div>
                     </div>
                     <div class="stat">
                         <div class="value">
-                            21
+                            Mech E
                         </div>
                         <div class="type">
-                            comments
+                            Major
                         </div>
                     </div>
                 </div>
             </div>
     
             <div class="card">
-                <div class="cardImg card3"></div>
+                <div class="cardImg card3Img"></div>
                 <div class="cardText card3">
                     <span class="date">3 weeks ago</span>
-                    <h2>Post Three</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                    <h2>I am an Engineer and Powerlifter</h2>
+                    <p>Brygitte de La Cruz is not only a great student but a passionate athlete. 
+                        <a href="https://engineering.dartmouth.edu/magazine/im-an-engineer-and-a-powerlifter"><br>[Read more]</a>
+                    </p>
                 </div>
-                <div class="cardStats card3">
+                <div class="cardStats card3Stats">
                     <div class="stat">
                         <div class="value">
-                            5<sup>m</sup>
+                            2020
                         </div>
                         <div class="type">
-                            read
+                            Graduation Year
                         </div>
                     </div>
                     <div class="stat border">
                         <div class="value">
-                            5123
+                            SHPE
                         </div>
-                        <div class="type">
-                            views
-                        </div>
+                        <div class="type"></div>
                     </div>
                     <div class="stat">
                         <div class="value">
-                            15
+                            Bio E
                         </div>
                         <div class="type">
-                            comments
+                            Major
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="main_footer">
+        <div class="upper_footer">
+            <div class="footer_socials">
+                <h5>Follow us on social media to stay up to date on all current events</h5>
+                <a href="https://www.instagram.com/shpe_dartmouth/" class="fa fa-instagram"></a>
+                <a href="https://www.pinterest.com/" class="fa fa-linkedin"></a>
+                <a href="mailto: society.of.hispanic.professional.engineers@dartmouth.edu" class="fa fa-envelope"></a>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <p>&copy; 2020 Society of Hispanic Professional Engineers | Dartmouth College.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 300,
+          duration: 1500
+      });
+    </script>
+
 </body>
 </html>
