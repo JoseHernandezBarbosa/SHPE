@@ -79,68 +79,15 @@ nav{
     color: #39AA7F;
 }
 
-/* Start of Grid*/
-#execHead{
-    font-family: 'Abel', sans-serif;
-    font-size: 6rem;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+.comingSoon{
     text-align: center;
-    color: #2C2C2C;
-    opacity: 90%;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 15% 35% 15% 35%;
-    grid-row-gap: 145px;
-}
-
-.profilePic img{
-    max-width: 190px;
-    max-height: 190px;
-    margin-left: 4.5rem;
-    margin-right: 20.5rem;
-}
-
-.memberInfo{
-    margin-left: 3.5rem;
-    margin-right: 1rem;
-}
-
-.name{
-    font-size: 1.75rem;
-    margin-bottom: 1px;
-}
-
-body a{
-    color: #2C2C2C;
-}
-
-.links{
-    justify-content: space-around;
-    font-size: 25px;
-    text-align: left;
-    text-decoration: none;
-    color: #2C2C2C;
-    margin-left: -18px;
-}
-
-.position{
-    margin-bottom: 25px;
-    margin-top: 5px;
-    font-size: 1.25rem;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 2px;
-}
-
-.bio{
-    font-family: 'Abel', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
+    font-size: 20rem;
 }
 
 /* Footer */
+body a{
+    color: #2c2c2c;
+}
 
 footer a{
     color: White;
@@ -170,7 +117,7 @@ footer h5{
     text-align: center;
     text-decoration: none;
     padding: 3px;
-    margin: 3rem 3rem;
+    margin: 4px 2px;
 }
 .fa {
     padding: 20px;

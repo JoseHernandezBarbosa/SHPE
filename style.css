@@ -168,7 +168,7 @@ nav{
 /* Logos on the front page */
 
 h5 {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -255,6 +255,8 @@ h5 {
     width: 100%;
     position: relative;
     margin-top: -40%;
+    color: #2C2C2C;
+    opacity: 90%;
 }
 
 .joinText{
