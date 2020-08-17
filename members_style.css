@@ -59,6 +59,10 @@ nav{
     transition: transform .6s;
 }
 
+nav img{
+    width: 150px;
+}
+
 .navBarItem:nth-child(1):hover ~ .active{
     transform: translateX(0);
     color: #39AA7F;

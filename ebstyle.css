@@ -79,6 +79,10 @@ nav{
     color: #39AA7F;
 }
 
+nav img{
+    width: 150px;
+}
+
 /* Start of Grid*/
 #execHead{
     font-family: 'Abel', sans-serif;
