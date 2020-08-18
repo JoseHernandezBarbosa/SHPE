@@ -79,18 +79,81 @@ nav{
     color: #39AA7F;
 }
 
-.comingSoon{
-    text-align: center;
-    font-size: 20rem;
-}
-
 nav img{
     width: 150px;
 }
 
+/* Start of Resources */
+ .intro{
+    text-align: center;
+}
+
+.intro h5{
+    font-family: 'Abel', sans-serif;
+    font-size: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #2C2C2C;
+    opacity: 90%;
+}
+
+.intro p{
+    font-size: 2.25rem;
+    color: #2C2C2C;
+    opacity: 70%;
+    margin-bottom: 1rem;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.intro img{
+    width: 75%;
+    margin-bottom: 6rem;
+}
+
+.cr h5{
+    font-size: 4rem;
+    color: rgb(255, 115, 0);
+    font-weight: 900;
+    margin-left: 12.5%;
+    margin-bottom: 4rem;
+}
+
+.cr{
+    margin-bottom: 25px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-row-gap: 50px;
+}
+
+.name{
+    margin-right: 15%;
+    font-size: 2.66rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.info{
+    font-size: 2rem;
+    margin-right: 25%;
+}
+
+.name a{
+    text-decoration: none;
+    color: #2C2C2C;
+} 
+
+.name a:hover{
+    color: #39AA7F;
+}
+
 /* Footer */
 body a{
-    color: #2c2c2c;
+    color: #2C2C2C;
 }
 
 footer a{
@@ -121,7 +184,7 @@ footer h5{
     text-align: center;
     text-decoration: none;
     padding: 3px;
-    margin: 4px 2px;
+    margin: 3rem 3rem;
 }
 .fa {
     padding: 20px;
