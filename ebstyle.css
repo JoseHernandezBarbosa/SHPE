@@ -11,6 +11,11 @@ html{
     font-size: 10px;
 }
 
+body{
+    overflow-x: hidden;
+
+}
+
 header{
     background-color: #2C2C2C;
     position: -webkit-sticky;
@@ -109,8 +114,8 @@ nav img{
 }
 
 .memberInfo{
-    margin-left: 3.5rem;
-    margin-right: 1rem;
+    margin-left: 5.5rem;
+    margin-right: 3rem;
 }
 
 .name{
@@ -239,7 +244,7 @@ footer h5{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .navBarList{
         position: absolute;
         right: 0px;
@@ -275,6 +280,49 @@ footer h5{
 
     html{
         overflow-x: hidden;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 1fr);
+        grid-row-gap: 0px;
+    }
+
+    .profilePic img{
+        max-width: 190px;
+        max-height: 190px;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .memberInfo{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .links{
+        text-align: center;
+    }
+
+    .bio{
+        text-align: left;
+        margin-bottom: 50px;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1024px){
+    
+    .memberInfo{
+        margin-left: 8.5rem;
+        margin-right: 2rem;
     }
 }
 
