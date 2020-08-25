@@ -585,6 +585,17 @@ footer h5{
     .column{
         width: 100%;
     }
+
+    .news{
+        margin-top: 50rem;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        margin-bottom: 50rem;
+    }
 }
 
 @media screen and (max-width:767px){
@@ -668,13 +679,28 @@ footer h5{
     }
 
     .news{
+        margin-top: 50rem;
+        position: relative;
         display: flex;
         flex-direction: column;
-        margin-top: 20rem;
-        
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        margin-bottom: 50rem;
+    }
+
+    html{
+        overflow-x: hidden;
     }
 }
 
 .navActive{
     transform: translateX(0%);
+}
+
+@media screen and (min-width:280px) and (max-width:320px){
+    .news{
+        margin-top: 60rem;
+        margin-bottom: 60rem;
+    }
 }
