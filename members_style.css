@@ -64,7 +64,7 @@ nav{
 }
 
 nav img{
-    width: 150px;
+    width: 80%;
 }
 
 .navBarItem:nth-child(1):hover ~ .active{
