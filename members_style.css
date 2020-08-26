@@ -61,6 +61,7 @@ nav{
     position: absolute;
     bottom: -1rem;
     transition: transform .6s;
+    margin-left: 30rem;
 }
 
 nav img{
@@ -68,22 +69,22 @@ nav img{
 }
 
 .navBarItem:nth-child(1):hover ~ .active{
-    transform: translateX(0);
+    transform: translateX(-30rem);
     color: #39AA7F;
 }
 
 .navBarItem:nth-child(2):hover ~ .active{
-    transform: translateX(15rem);
+    transform: translateX(-15rem);
     color: #39AA7F;
 }
 
 .navBarItem:nth-child(3):hover ~ .active{
-    transform: translateX(30rem);
+    transform: translateX(0rem);
     color: #39AA7F;
 }
 
 .navBarItem:nth-child(4):hover ~ .active{
-    transform: translateX(45rem);
+    transform: translateX(15rem);
     color: #39AA7F;
 }
 
@@ -194,7 +195,13 @@ footer h5{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width:768px){
+@media screen and (min-width:768px) and (max-width:1000px){
+    .comingSoon{
+        margin-bottom: 66.75vh;
+    }
+}
+
+@media screen and (max-width:767px){
     .navBarList{
         position: absolute;
         right: 0px;
