@@ -244,7 +244,15 @@ footer h5{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (min-width:768px) and (max-width:999px){
+
+@media screen and (min-width:1025px) and (max-width:1300px){
+    .memberInfo{
+        margin-left: 9.5rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1000px){
     .container{
         display: grid;
         grid-template-columns: 100%;

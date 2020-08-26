@@ -195,6 +195,12 @@ footer h5{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media screen and (min-width:1025px) and (max-width:1300px){
+    .comingSoon{
+        margin-bottom: 75.5vh;
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:1000px){
     .comingSoon{
         margin-bottom: 66.75vh;
