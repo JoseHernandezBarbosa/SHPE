@@ -308,161 +308,52 @@ h5 {
     font-weight: 200;
 }
 
+#n h5{
+    font-size: 3.5rem;
+}
+
 .news{
     position: relative;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
     justify-content: center;
     background:url("background.jpg");
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+
 }
 
-.card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "stats";
-
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: "Monserrat", sans-serif;
-    text-align: center;
-
-
-    transition: 0.5s ease;
-    cursor: pointer;
-    margin:30px;
-}
-
-.cardImg {
-    grid-area: image;
-    /* background: url(homePhotos/community.jpg); */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    /* background-size: cover; */
-}
-
-.cardText {
-    grid-area: text;
-    margin: 25px;
-}
-
-.cardText .date {
-    /* color: rgb(255, 7, 110); */
-    font-size:13px;
-}
-
-.cardText p {
-    color: grey;
-    font-size:15px;
-    font-weight: 300;
-}
-
-.cardText h2 {
-    margin-top:0px;
-    font-size:28px;
-}
-
-.cardStats {
-    grid-area: stats; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    /* background: rgb(0, 250, 154); */
-}
-
-
-.cardStats .stat {
-    padding:10px;
+.event{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: left;
+    margin-left: 10%;
 }
 
-.cardStats .value{
-    font-size:22px;
-    font-weight: 500;
+.dateWrapper1{
+    width: 175px;
+    text-align: left;
+    border: 4px solid black;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right,mediumspringgreen, rgb(0, 255, 242));
 }
 
-.cardStats .value sup{
-    font-size:12px;
+.dateWrapper2{
+    width: 175px;
+    text-align: left;
+    border: 4px solid black;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom,rgb(255, 174, 0), rgb(255, 251, 1))
 }
 
-.cardStats .type{
-    font-size:11px;
-    font-weight: 300;
-    text-transform: uppercase;
+
+.eventInfo{
+    text-align: center;
+    line-height: 150PX;
 }
 
-.card:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
 
-/* card1 */
-
-.card1Img{
-    background: url(homePhotos/SHPEgroup.jpg);
-    background-size: cover;
-}
-
-.card1 .date{
-    color: rgb(0, 221, 136);
-}
-
-.card1Stats .border {
-    border-left: 1px solid rgb(0, 212, 131);
-    border-right: 1px solid rgb(0, 212, 131);
-}
-
-.card1Stats{
-    background: rgb(0, 221, 136);
-}
-
-/* card2 */
-.card2Img {
-    background: url(homePhotos/news1.jpg);
-    background-size: cover;
-}
-
-.card2 .date {
-    color: rgb(255, 168, 86);
-}
-
-.card2Stats .border {
-    border-left: 1px solid rgb(253, 159, 71);
-    border-right: 1px solid rgb(253, 159, 71);
-}
-
-.card2Stats {
-    background: rgb(255, 168, 86);
-}
-
-/*card3*/
-.card3Img {
-    background: url(homePhotos/news2.jpg);
-    background-size: cover;
-}
-
-.card3 .date {
-    color: rgb(0, 221, 136);
-}
-
-.card3Stats .border {
-    border-left: 1px solid rgb(0, 212, 131);
-    border-right: 1px solid rgb(0, 212, 131)
-}
-
-.card3Stats {
-    background: rgb(0, 221, 136);
-}
 
 .news h5{
     font-size: 6rem;
@@ -574,6 +465,7 @@ footer h5{
     .slideText h5{
         font-size: 4rem;
     }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
@@ -587,14 +479,11 @@ footer h5{
     }
 
     .news{
-        margin-top: 50rem;
+        margin-top: 50px;
         position: relative;
-        display: flex;
-        flex-direction: column-reverse;
         align-items: center;
-        justify-content: center;
         overflow: visible;
-        margin-bottom: 50rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -676,17 +565,55 @@ footer h5{
         font-size: 4rem;
         margin-left: 12.5%;
         margin-right: 12.5%;
+        margin-bottom: 0;
     }
 
     .news{
-        margin-top: 50rem;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         overflow: visible;
-        margin-bottom: 50rem;
+        margin-bottom: 30rem;
+        margin-right: 10%;
+    }
+
+    .event{
+        display: flexbox;
+        flex-direction: column;
+        
+    }
+
+    .eventInfo{
+        text-align: left;
+
+    }
+
+    .eventInfo h5{
+        line-height: normal;
+    }
+
+
+    .dateWrapper1{
+        width: 300px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .dateWrapper1 h5{
+        margin-right: 10px;
+    }
+
+    .dateWrapper2{
+        width: 300px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .dateWrapper2 h5{
+        margin-right: 20px;
+    }
+
+    .news h5{
+        font-size: small;
     }
 
     html{
@@ -698,9 +625,13 @@ footer h5{
     transform: translateX(0%);
 }
 
-@media screen and (min-width:280px) and (max-width:320px){
+
+
+@media screen and (min-width:280px) and (max-width:375px){
     .news{
-        margin-top: 60rem;
-        margin-bottom: 60rem;
+        margin-top: 15rem;
+        margin-bottom: 55rem;
+        width:10px;
     }
+
 }
